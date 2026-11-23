@@ -1,0 +1,77 @@
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #192d3a;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.app h1 {
+  color: white;
+  font-size: 36px;
+  margin-bottom: 30px;
+}
+
+.quote-box {
+  background: #f5f1e8;
+  max-width: 600px;
+  width: 100%;
+  padding: 40px;
+  border-radius: 15px;
+  box-sizing: border-box;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.quote-box h2 {
+  color: #263b46;
+  font-size: 25px;
+  line-height: 1.6;
+  font-weight: 500;
+}
+
+.quote-box p {
+  color: #65747b;
+  font-size: 18px;
+  margin-top: 25px;
+}
+
+button {
+  margin-top: 25px;
+  padding: 14px 30px;
+  background: #e6b566;
+  color: #192d3a;
+  border: none;
+  border-radius: 25px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #f2cc8f;
+}
+
+button:focus-visible {
+  outline: 3px solid white;
+  outline-offset: 3px;
+}
+
+@media (max-width: 600px) {
+  .app h1 {
+    font-size: 28px;
+  }
+
+  .quote-box {
+    padding: 25px;
+  }
+
+  .quote-box h2 {
+    font-size: 20px;
+  }
+}
